@@ -35,12 +35,10 @@ jobs:
             node-version: 12.8
 
     - name: install all packages
-      run: cd myportfolio 
-           npm install
+      run: npm install
 
     - name: install angular cli
-      run: cd myportfolio
-           npm install -g @angular/cli
+      run: npm install -g @angular/cli
 
     - name: build project
       run: ng build --prod
