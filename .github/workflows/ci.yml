@@ -36,5 +36,15 @@ jobs:
     - name: build project
       working-directory: ./myportfolio
       run: ng build --prod
-    
-    
+      
+    - name: Deploy to Heroku
+      uses: AkhileshNS/heroku-deploy@v3.0.4
+      with:
+          # This will be used for authentication. You can find it in your heroku homepage account settings
+          heroku_api_key: 9d8ce73a-c76b-4a7e-9db5-e90cdc179f72
+          # Email that you use with heroku
+          heroku_email: himanshu14263@gmail.com
+          # The appname to use for deploying/updating
+          heroku_app_name: portfolio-himanshu
+
+
