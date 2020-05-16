@@ -23,8 +23,8 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: displaying pwd
-      run: pwd
-           ls
+      run: pwd |
+           ls |
            cd myportfolio
 
 #     - name: Install Node
