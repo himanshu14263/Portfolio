@@ -22,21 +22,24 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Install Node
-      uses: actions/setup-node@v1
-      with:
-            node-version: 12.8
+    - name: displaying pwd
+      run: pwd
 
-    # Runs a single command using the runners shell
-    - name: install all packages
-      run: cd myportfolio 
-           npm install
+#     - name: Install Node
+#       uses: actions/setup-node@v1
+#       with:
+#             node-version: 12.8
 
-    - name: install angular cli
-      run: cd myportfolio
-           npm install -g @angular/cli
+#     # Runs a single command using the runners shell
+#     - name: install all packages
+#       run: cd myportfolio 
+#            npm install
 
-    - name: build project
-      run: ng build --prod
+#     - name: install angular cli
+#       run: cd myportfolio
+#            npm install -g @angular/cli
+
+#     - name: build project
+#       run: ng build --prod
     
     
