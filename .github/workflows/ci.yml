@@ -24,6 +24,8 @@ jobs:
 
     - name: displaying pwd
       run: pwd
+           ls
+           cd myportfolio
 
 #     - name: Install Node
 #       uses: actions/setup-node@v1
