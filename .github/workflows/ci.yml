@@ -28,7 +28,8 @@ jobs:
       run: ls
     - name: changing directory
       run: cd myportfolio  
-
+    - name: displaying pwd
+      run: pwd
     - name: Install Node
       uses: actions/setup-node@v1
       with:
