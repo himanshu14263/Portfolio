@@ -33,7 +33,7 @@ jobs:
 
     - name: install angular cli
       run: cd myportfolio
-      run: npm install -g @angular/cli
+           npm install -g @angular/cli
 
     - name: build project
       run: ng build --prod
