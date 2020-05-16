@@ -23,30 +23,26 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: displaying pwd
-      run: |
-           pwd,
-           ls,
-           cd myportfolio
-#     - name: displaying pwd
-#       run: ls
-#     - name: displaying pwd
-#       run: cd myportfolio  
+      run: pwd
+    - name: displaying current directories
+      run: ls
+    - name: changing directory
+      run: cd myportfolio  
 
-#     - name: Install Node
-#       uses: actions/setup-node@v1
-#       with:
-#             node-version: 12.8
+    - name: Install Node
+      uses: actions/setup-node@v1
+      with:
+            node-version: 12.8
 
-#     # Runs a single command using the runners shell
-#     - name: install all packages
-#       run: cd myportfolio 
-#            npm install
+    - name: install all packages
+      run: cd myportfolio 
+           npm install
 
-#     - name: install angular cli
-#       run: cd myportfolio
-#            npm install -g @angular/cli
+    - name: install angular cli
+      run: cd myportfolio
+           npm install -g @angular/cli
 
-#     - name: build project
-#       run: ng build --prod
+    - name: build project
+      run: ng build --prod
     
     
