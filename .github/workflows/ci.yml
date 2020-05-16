@@ -36,6 +36,9 @@ jobs:
 
     - name: install all packages
       run: npm install
+      
+    - name: displaying current directories
+      run: ls
 
     - name: install angular cli
       run: npm install -g @angular/cli
