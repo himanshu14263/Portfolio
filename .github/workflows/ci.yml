@@ -26,5 +26,5 @@ jobs:
     - name: install all packages
       run: npm install
     - name: build project
-      run: ng build
+      run: npm build
     
