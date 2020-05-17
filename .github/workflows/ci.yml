@@ -22,19 +22,19 @@ jobs:
             node-version: 12.8
 
     - name: install all packages
-      working-directory: ./myportfolio
+#       working-directory: ./myportfolio
       run: npm install
       
     - name: displaying current directories
-      working-directory: ./myportfolio
+#       working-directory: ./myportfolio
       run: ls
 
     - name: install angular cli
-      working-directory: ./myportfolio
+#       working-directory: ./myportfolio
       run: npm install -g @angular/cli
 
     - name: build project
-      working-directory: ./myportfolio
+#       working-directory: ./myportfolio
       run: ng build --prod
 
 
